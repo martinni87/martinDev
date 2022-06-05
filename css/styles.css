@@ -2,7 +2,6 @@
 {
 	margin:0;
 	padding:0;
-	line-height: 2em;
 }
 a:link, a:visited, a:active {
     text-decoration:none;
@@ -101,8 +100,26 @@ main
 	padding-right: 15%;
 	padding-top:5em;
 	padding-bottom:5em;
+}
+
+.main__text
+{
+	line-height: 2em;
 	text-align: justify;
 	font-size: larger;
+	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.main__text--title
+{
+	
+}
+
+.main__text--signature
+{
+	text-align: center;
+	font-size: smaller;
+	font-family: cursive;
 }
 
 .bottom_container
@@ -121,10 +138,12 @@ main
 
 .footer__text
 {
+	line-height: 2em;
 	padding-left:15%;
 	width:35%;
 	align-items: center;
 	text-align: justify;
+	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .footer__links
@@ -135,6 +154,7 @@ main
 	flex-direction: column;
 	justify-content: space-around;
 	align-items:flex-end;
+
 }
 
 .footer__links a
