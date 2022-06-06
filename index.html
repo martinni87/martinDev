@@ -16,21 +16,34 @@
 			<div class="header__title">
 				<h1 class="header__title--colons">:></h1>
 				<h1 class="header__title--name">martín_<strong>Córdoba</strong></h1>
-				<p><em>iOS & Android Developer</em></p>
+				<p class="header__title--dev"><em>iOS & Android Developer</em></p>
 			</div>
 		</header>
 
-		<nav class="navBar">
+		<nav class="navBar-text">
 			<ul>
-				<li class="navBar__btn"><a href="./aboutMe.html">ABOUT ME</a></li>
-				<li class="navBar__btn act-btn"><a href="./index.html">HOME</a></li>
-				<li class="navBar__btn"><a href="./myProjects.html">MY PROJECTS</a></li>
+				<li class="navBar__btn" id="navBar__btn"><a href="#welcome">WELCOME</a></li>
+				<li class="navBar__btn" id="navBar__btn"><a href="#aboutMe">ABOUT ME</a></li>
+				<li class="navBar__btn" id="navBar__btn"><a href="#myProjects">MY PROJECTS</a></li>
+				<li class="navBar__btn" id="navBar__btn"><a href="#contactMe">CONTACT ME</a></li>
 			</ul>
+		</nav>
+		<nav class="navBar-icon">
+			<img src="./img/cabecera/menu.png" alt="Menu button">
 		</nav>
 
 		<main class="main">
-			<div class="main__text">
-				<p class="main__text--title">Dear visitor:</p>
+
+			<div class="article article__white" id="welcome">
+				<p class="article--title">Hello there!</p>
+				<p>
+					My name is <em>Martin</em>, and I'm a Software Developer.
+				</p>
+				<p>This</p>
+			</div>
+
+			<div class="article article__black" id="aboutMe">
+				<p class="article--title">About me:</p>
 				<p>
 					This is my presentation for you. At the top you will find the navigation bar which
 					you can use to navigate to the <strong>'About me'</strong> page and see my resume
@@ -47,18 +60,50 @@
 					I trully hope you enjoy your visit to this website, and to collaborate in exciting
 					new projects in the near future.
 				</p>
-				<p class="main__text--signature"><em>~~~</em></p>
-				<p class="main__text--signature"><em>Martín Antonio Córdoba Getar</em></p>
-				<p class="main__text--signature"><em>iOS & Android Developer</em></p>
+				<p class="article--signature"><em>~~~</em></p>
+				<p class="article--signature"><em>Martín Antonio Córdoba Getar</em></p>
+				<p class="article--signature"><em>iOS & Android Developer</em></p>
 			</div>
+
+			<div class="article article__grey" id="myProjects">
+				<p class="article--title">My projects:</p>
+				<p>
+					This is my presentation for you. At the top you will find the navigation bar which
+					you can use to navigate to the <strong>'About me'</strong> page and see my resume
+					and some backstory about myself.
+					
+					This website is my presentation for you. To know more about me, please click on
+					'aboutMe' button on the navigation menu bar, where you will find a resume about
+					my carrer and a little story of my self and how I became a programmer.
+					If you want to see my recent projects, please click on 'myProjects button' and you
+					will see my portfolio with a few of my most recent projects and links to my github
+					repositories.
+				</p>
+				<p>
+					I trully hope you enjoy your visit to this website, and to collaborate in exciting
+					new projects in the near future.
+				</p>
+				<p class="article--signature"><em>~~~</em></p>
+				<p class="article--signature"><em>Martín Antonio Córdoba Getar</em></p>
+				<p class="article--signature"><em>iOS & Android Developer</em></p>
+			</div>
+
+			<div class="article article__white" id="contactMe">
+				<p class="article--title">Contact me:</p>
+				form...
+				</p>
+			</div>
+
 		</main>
 	</div>
 	<div class="bottom_container">
 		<footer class="footer">
+
 			<div class="footer__text">
-				Please, visit my profiles on <strong>LinkedIn</strong> and <strong>Github</strong>
-				to know more about me and my projects.
+				Please, feel free to visit my profiles on <strong>LinkedIn</strong> and
+				<strong>Github</strong> to know more about me and my projects.
 			</div>
+
 			<div class="footer__links">
 				<a href="https://www.linkedin.com/in/martincbag/">
 					<img src="./img/footer/linkedin.png" alt="LinkedIn link" width="100px">
@@ -67,7 +112,14 @@
 					<img src="./img/footer/github.png" alt="Github link" width="100px" style="filter:invert()">
 				</a>
 			</div>
+
+			<div class="footer__signature">
+				<div>Martín Antonio Córdoba Getar</div>
+				<div>iOS & Android Developer</div>
+			</div>
+
 		</footer>
 	</div>
+	<script src="./js/script.js"></script>
 </body>
 </html>
