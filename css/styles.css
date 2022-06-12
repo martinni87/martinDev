@@ -20,6 +20,8 @@ html,body
 	justify-content: space-between;
 	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 	font-weight: light;
+	scroll-behavior: smooth;
+
 }
 
 .top_container
@@ -87,6 +89,7 @@ header
 	text-decoration: none;
 	color:darkgrey;
 	text-decoration: none;
+	transition: .5s ease;
 }
 
 .act-btn a
@@ -151,27 +154,64 @@ main
 	text-align: center;
 }
 
-.article__content ul
+.article__pic_wrapper
 {
-	padding:1em 0 1em 0;
-	display:flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	list-style: none;
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
 }
 
-.article__content ul > li
+.fadetextpic_container
 {
-	height: 100px;
-	width: 100px;
-	display:flex;
-	justify-content: center;
-	align-items: center;
+	position: relative;
+	width: 120px;
+	transition: .5s ease;
 }
 
-.article__content ul > li:hover
+.fadeimage
 {
-	opacity: 50%;
+	width: 100%;
+	display: block;
+	height: auto;
+	border-radius: 5px;
+}
+
+.fadeoverlay
+{
+	top: 0;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: orange;
+	border-radius: 5px;
+}
+
+.fadetextpic_container:hover
+{
+	opacity: 0.75;
+}
+.fadeoverlay:hover
+{
+	opacity:0.75;
+	font-weight: bolder;
+	font-size: larger;
+}
+
+.fadetext
+{
+	color: black;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
 }
 
 
