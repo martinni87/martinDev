@@ -14,7 +14,6 @@
 	<div class="top_container">
 		<header class="header">
 			<div class="header__title">
-				<h1 class="header__title--colons">:></h1>
 				<h1 class="header__title--name">martín_<strong>Córdoba</strong></h1>
 				<p class="header__title--dev"><em>iOS & Android Developer</em></p>
 			</div>
@@ -34,64 +33,82 @@
 
 		<main class="main">
 
-			<div class="article article__white" id="welcome">
-				<p class="article--title">Hello there!</p>
-				<p>
-					My name is <em>Martin</em>, and I'm a Software Developer.
-				</p>
-				<p>This</p>
+			<div class="article article--white" id="welcome">
+				<div class="article__title">Hello there!</div>
+				<div class="article__content">
+					<p>
+						My name is <strong>Martin</strong>, and I'm a <strong>Software Developer</strong>. Below you'll see some of the stuff I've used most recently.
+					</p>
+				</div>
+				<div class="article__title"><strong>Mobile and Desktop Development</strong></div>
+				<div class="article__content">
+					<ul>
+						<li class="article__logo-holder"><img src="./img/icons/swift-original.svg" alt="Swift"></li>
+						<li class="article__logo-holder"><img src="./img/icons/java-original.svg" alt="Java"></li>
+						<li class="article__logo-holder"><img src="./img/icons/kotlin-original.svg" alt="Kotlin"></li>
+						<li class="article__logo-holder"><img src="./img/icons/flutter-original.svg" alt="Dart+Flutter"></li>
+					</ul>
+				</div>
+				<div class="article__title"><strong>Web Development</strong></div>
+				<div class="article__content">
+					<ul>
+						<li class="article__box"><img src="./img/icons/php-plain.svg" alt="PHP"></li>
+						<li class="article__box"><img src="./img/icons/html5-original.svg" alt="HTML5"></li>
+						<li class="article__box"><img src="./img/icons/css3-original.svg" alt="CSS3"></li>
+						<li class="article__box"><img src="./img/icons/javascript-original.svg" alt="JavaScript"></li>
+					</ul>
+				</div>
 			</div>
 
-			<div class="article article__black" id="aboutMe">
-				<p class="article--title">About me:</p>
-				<p>
-					This is my presentation for you. At the top you will find the navigation bar which
-					you can use to navigate to the <strong>'About me'</strong> page and see my resume
-					and some backstory about myself.
-					
-					This website is my presentation for you. To know more about me, please click on
-					'aboutMe' button on the navigation menu bar, where you will find a resume about
-					my carrer and a little story of my self and how I became a programmer.
-					If you want to see my recent projects, please click on 'myProjects button' and you
-					will see my portfolio with a few of my most recent projects and links to my github
-					repositories.
-				</p>
-				<p>
-					I trully hope you enjoy your visit to this website, and to collaborate in exciting
-					new projects in the near future.
-				</p>
-				<p class="article--signature"><em>~~~</em></p>
-				<p class="article--signature"><em>Martín Antonio Córdoba Getar</em></p>
-				<p class="article--signature"><em>iOS & Android Developer</em></p>
+			<div class="article article--black" id="aboutMe">
+				<div class="article__title">A little bit about myself</div>
+				<div class="article__content">
+					<p>
+						Since I was very young, I've always been passionate about technology and science.
+						From the very beggining, I've been playing around with computers running on systems
+						such as Windows 98 to Windows 11, a few different distributions of GNU/Linux since 2007,
+						and macOS since 2009.
+					</p>
+					<p>
+						In 2020 I started my carrer path to become a professional software developer. My first
+						programming language was <strong>Swift</strong> which I learned following Apple's official documentation and
+						using some resources such as Playgrounds and some ebooks. Then I've learned some of <strong>OOP with
+						C++</strong> using Visual Studio as the main IDE.
+
+						By 2022 my I've got a very profound understanding of many different systems, knowing 
+						plenty of processes
+					</p>
+
+				</div>
 			</div>
 
-			<div class="article article__grey" id="myProjects">
-				<p class="article--title">My projects:</p>
-				<p>
-					This is my presentation for you. At the top you will find the navigation bar which
-					you can use to navigate to the <strong>'About me'</strong> page and see my resume
-					and some backstory about myself.
-					
-					This website is my presentation for you. To know more about me, please click on
-					'aboutMe' button on the navigation menu bar, where you will find a resume about
-					my carrer and a little story of my self and how I became a programmer.
-					If you want to see my recent projects, please click on 'myProjects button' and you
-					will see my portfolio with a few of my most recent projects and links to my github
-					repositories.
-				</p>
-				<p>
-					I trully hope you enjoy your visit to this website, and to collaborate in exciting
-					new projects in the near future.
-				</p>
-				<p class="article--signature"><em>~~~</em></p>
-				<p class="article--signature"><em>Martín Antonio Córdoba Getar</em></p>
-				<p class="article--signature"><em>iOS & Android Developer</em></p>
+			<div class="article article--grey" id="myProjects">
+				<div class="article__title">Some of my projects</div>
+				<div class="article__content">
+					<ul>
+						<li class="article__box"><p>Project #1</p></li>
+						<li class="article__box"><p>Project #2</p></li>
+						<li class="article__box"><p>Project #3</p></li>
+						<li class="article__box"><p>Project #4</p></li>
+					</ul>
+				</div>
 			</div>
 
-			<div class="article article__white" id="contactMe">
-				<p class="article--title">Contact me:</p>
-				form...
-				</p>
+			<div class="article article--white" id="contactMe">
+				<div class="article__content">
+					<form action="./backend/Action.java" method="post">
+						<fieldset>
+							<legend><h2>Contact me</h2></legend>
+							<p><label for="contactName">Name: </label><input type="text" name="contactName" id="contactName"></p>
+							<p><label for="contactMail">Email: </label><input type="email" name="contactMail" id="contactMail"></p>
+							<p><input type="text" name="messageBox" id="messageBox" class=""></p>
+							<p>
+								<input type="submit" value="Send" name="send">
+								<input type="reset" value="Clear" name="clear">
+							</p>
+						</fieldset>
+					</form>
+				</div>
 			</div>
 
 		</main>

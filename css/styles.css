@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
 *
 {
 	margin:0;
 	padding:0;
+	font-family: 'Gentium Plus', serif;
 }
 a:link, a:visited, a:active {
     text-decoration:none;
@@ -14,6 +18,8 @@ html,body
 	height: 100%;
 	width: 100%;
 	justify-content: space-between;
+	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-weight: light;
 }
 
 .top_container
@@ -23,7 +29,7 @@ html,body
 }
 header
 {
-	height: 50vh;
+	height: 50vw;
 	width: 100%;
 	background: url(/martinDev/img/cabecera/header-pic.jpg);
     background-repeat:no-repeat;
@@ -38,25 +44,14 @@ header
 
 .header__title
 {
-	padding-left:5%;
-	padding-bottom:5px;
+	padding-left:15%;
+	padding-bottom:10%;
 	background-color:rgba(0,0,0,0);
 	color:white;
-	display:grid;
-	grid-template-columns: auto 1fr;
-	grid-template-rows: 1fr 1fr;
+	display:flex;
+	flex-direction: column;
 	font-family: 'Courier New', Courier, monospace;
-	font-size:2vw;
-}
-
-.header__title--colons
-{
-	padding-right: 1em;
-}
-
-.header__title p
-{
-	grid-column: 2;
+	font-size:calc(10px + 2vw);
 }
 
 .navBar-text
@@ -121,29 +116,75 @@ main
 	padding-right: 15%;
 	text-align: justify;
 	font-size: larger;
-	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
+	display:flex;
+	flex-direction: column;
 }
 
-.article__white
+.article--white
 {
 	background-color: white;
 }
 
-.article__black
+.article--black
 {
 	background-color: black;
 	color:white;
 }
 
-.article__grey
+.article--grey
 {
 	background-color: lightgrey;
 }
 
-.article--title
+.article__title
 {
+	padding-top:1em;
+	padding-bottom:1em;
+	width: 100%;
 	font-size: larger;
+	display:flex;
+}
+
+.article__title strong
+{
+	width:100%;
+	text-align: center;
+}
+
+.article__content ul
+{
+	padding:1em 0 1em 0;
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	list-style: none;
+}
+
+.article__content ul > li
+{
+	height: 100px;
+	width: 100px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.article__content ul > li:hover
+{
+	opacity: 50%;
+}
+
+
+.article__content form > fieldset
+{
+	display: block;
+	
+}
+
+input
+{
+	width:auto;
+	height:auto;
 }
 
 .bottom_container
