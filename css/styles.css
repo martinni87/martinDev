@@ -89,19 +89,14 @@ header
 	text-decoration: none;
 	color:darkgrey;
 	text-decoration: none;
-	transition: .5s ease;
-}
-
-.act-btn a
-{
-	color:black;
-	font-weight: bolder;
 }
 
 .navBar__btn a:hover
 {
-	color:blue;
+	color:darkorange;
 	font-weight: bolder;
+	text-shadow: 0 0 35px orange;
+	transition: 0.5s ease;
 }
 
 main
@@ -159,6 +154,7 @@ main
 	display:grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-template-rows: 1fr;
+	gap: 5px;
 }
 
 .fadetextpic_container
@@ -291,6 +287,7 @@ input
 .footer__links a:hover
 {
 	box-shadow: 0 0 15px white;
+	transition: .5s ease;
 }
 
 /* Media queries */
@@ -321,4 +318,10 @@ input
 		margin-right:4%;
 		justify-self: flex-end;
 	}
+	.article__pic_wrapper
+{
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+}
 }
