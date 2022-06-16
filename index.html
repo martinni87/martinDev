@@ -7,15 +7,24 @@
   	<meta name="keywords" content="iOS development, Android development, Martin Cordoba Getar, webApps">
   	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  	<link rel="stylesheet" href="./css/styles.css">
+	<link rel="stylesheet" href="./css/01_general.css">
+	<link rel="stylesheet" href="./css/02_header.css">
+	<link rel="stylesheet" href="./css/03_navBar.css">
+  	<link rel="stylesheet" href="./css/04_main.css">
+	<!--<link rel="stylesheet" href="./css/05_article.css">-->
+	<link rel="stylesheet" href="./css/06_forms.css">
+	<!--<link rel="stylesheet" href="./css/07_footer.css">
+	<link rel="stylesheet" href="./css/08_pictureGrid.css">
+	<link rel="stylesheet" href="./css/98_fadeEffect.css">
+	<link rel="stylesheet" href="./css/99_mediaqueries.css">-->
   	<title>martinDev</title>
 </head>
 <body>
 	<div class="top_container">
 		<header class="header">
 			<div class="header__title">
-				<h1 class="header__title--name">martín_<strong>Córdoba</strong></h1>
-				<p class="header__title--dev"><em>iOS & Android Developer</em></p>
+				<h1 class="header__title--name">Martin <strong>Cordoba</strong></h1>
+				<p class="header__title--sub"><em>iOS & Android Developer</em></p>
 			</div>
 		</header>
 
@@ -40,7 +49,7 @@
 						My name is <strong>Martin</strong>, and I'm a <strong>Software Developer</strong>. Below you'll see some of the stuff I've used most recently.
 					</p>
 				</div>
-				<div class="article__title"><strong>Mobile and Desktop Development</strong></div>
+				<!--<div class="article__title"><strong>Mobile and Desktop Development</strong></div>
 				<div class="article__pic_wrapper">
 					<div class="fadetextpic_container">
 						<img src="./img/icons/swift-original.svg" alt="Swift" class="fadeimage">
@@ -91,7 +100,7 @@
 							<div class="fadetext">JavaScript</div>
 						</div>
 					</div>
-				</div>
+				</div>-->
 			</div>
 
 			<div class="article article--black" id="aboutMe">
@@ -133,9 +142,9 @@
 					<form action="./backend/Action.java" method="post">
 						<fieldset>
 							<legend><h2>Contact me</h2></legend>
-							<p><label for="contactName">Name: </label><input type="text" name="contactName" id="contactName"></p>
-							<p><label for="contactMail">Email: </label><input type="email" name="contactMail" id="contactMail"></p>
-							<p><input type="text" name="messageBox" id="messageBox" class=""></p>
+							<div class="input"><p><label for="contactName">Name: </label><input type="text" name="contactName" id="contactName"></p></div>
+							<div class="input"><p><label for="contactMail">Email: </label><input type="email" name="contactMail" id="contactMail"></p></div>
+							<div class="input"><p><input type="text" name="messageBox" id="messageBox" class=""></p></div>
 							<p>
 								<input type="submit" value="Send" name="send">
 								<input type="reset" value="Clear" name="clear">
@@ -165,7 +174,7 @@
 			</div>
 
 			<div class="footer__signature">
-				<div>Martín Antonio Córdoba Getar</div>
+				<div>Martin Cordoba</div>
 				<div>iOS & Android Developer</div>
 			</div>
 

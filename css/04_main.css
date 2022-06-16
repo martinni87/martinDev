@@ -1,0 +1,11 @@
+main
+{
+	height:auto;
+	width: 70%;
+	align-self: center;
+	text-align: justify;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	font-size: larger;
+	font-family: 'Gentium Plus', serif;
+}

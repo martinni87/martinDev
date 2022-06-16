@@ -1,0 +1,54 @@
+
+.fadetextpic_container
+{
+	position: relative;
+	width: 120px;
+	transition: .5s ease;
+}
+
+.fadeimage
+{
+	width: 100%;
+	display: block;
+	height: auto;
+	border-radius: 5px;
+}
+
+.fadeoverlay
+{
+	top: 0;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: orange;
+	border-radius: 5px;
+}
+
+.fadetextpic_container:hover
+{
+	opacity: 0.75;
+}
+.fadeoverlay:hover
+{
+	opacity:0.75;
+	font-weight: bolder;
+	font-size: larger;
+}
+
+.fadetext
+{
+	color: black;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+

@@ -1,0 +1,35 @@
+/* Media queries */
+@media only screen and (max-width: 600px) {
+	.navBar-text
+	{
+		display:none
+	}
+	.navBar-icon
+	{
+		display:flex;
+		border-top:0.5px solid darkgrey;
+		border-bottom:1px solid darkgrey;
+		text-align: center;
+		position:sticky;
+		top:0;
+		z-index:100;
+		background-color: white;
+		min-height: auto;
+		height: 50px;
+		width:100%;
+	}
+	.navBar-icon img
+	{
+		display: flex;
+		width: 100%;
+		margin-left: 88%;
+		margin-right:4%;
+		justify-self: flex-end;
+	}
+	.article__pic_wrapper
+{
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+}
+}

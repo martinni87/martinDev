@@ -1,0 +1,40 @@
+a:link, a:visited, a:active {
+    text-decoration:none;
+	color:grey;
+}
+
+.navBar-text
+{
+	border-top:0.5px solid darkgrey;
+	border-bottom:1px solid darkgrey;
+	text-align: center;
+	position:sticky;
+	top:0;
+	z-index:100;
+	background-color: white;
+	height: auto;
+}
+
+.navBar-text ul
+{
+	padding:1em 15% 1em 15%;
+	display:flex;
+	flex-wrap: wrap;
+	gap:10px;
+	justify-content: space-between;
+	list-style: none;
+}
+
+
+.navBar__btn a:hover
+{
+	color:#FF6768;
+	font-weight: bolder;
+	/*text-shadow: 0 0 35px #FF6768;*/
+	transition: 0.5s ease;
+}
+
+.navBar-icon img
+{
+	display:none;
+}

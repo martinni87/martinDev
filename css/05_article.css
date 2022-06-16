@@ -1,0 +1,57 @@
+.article
+{
+	line-height: 2em;
+	padding-top:5em;
+	padding-bottom:5em;
+	padding-left: 15%;
+	padding-right: 15%;
+	text-align: justify;
+	font-size: larger;
+	display:flex;
+	flex-direction: column;
+}
+
+.article--white
+{
+	background-color: white;
+}
+
+.article--black
+{
+	background-color: black;
+	color:white;
+}
+
+.article--grey
+{
+	background-color: lightgrey;
+}
+
+.article__title
+{
+	padding-top:1em;
+	padding-bottom:1em;
+	width: 100%;
+	font-size: larger;
+	display:flex;
+}
+
+.article__title strong
+{
+	width:100%;
+	text-align: center;
+}
+
+.article__pic_wrapper
+{
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	gap: 5px;
+}
+.article__content form > fieldset
+{
+	display: block;
+	
+}
+

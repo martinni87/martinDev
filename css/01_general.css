@@ -1,0 +1,44 @@
+/*
+    General configurations of website:
+    1. Fonts
+    2. Main structure: top and bottom containers
+    3. Top container: header and main sections
+    4. Bottom container: footer
+*/
+
+/* Main fonts for web site */
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* This block is to put margin and padding to 0 and to assign font-family to the whole document */
+*
+{
+	margin:0;
+	padding:0;
+	/*font-family: 'Gentium Plus', serif;*/
+}
+
+/* This block is for setting html and body configuration */
+
+html,body
+{
+	display:flex;
+	flex-direction: column;
+	height: 100%;
+	width: 100%;
+	justify-content: space-between;
+	font-weight: light;
+	scroll-behavior: smooth;
+}
+
+.top_container
+{
+	display:flex;
+	flex-direction: column;
+}
+
+.bottom_container
+{
+	background-color: black;
+	width: 100%;
+	color:white;
+}
