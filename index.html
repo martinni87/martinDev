@@ -11,11 +11,11 @@
 	<link rel="stylesheet" href="./css/02_header.css">
 	<link rel="stylesheet" href="./css/03_navBar.css">
   	<link rel="stylesheet" href="./css/04_main.css">
-	<!--<link rel="stylesheet" href="./css/05_article.css">-->
+	<link rel="stylesheet" href="./css/05_article.css">
 	<link rel="stylesheet" href="./css/06_forms.css">
-	<!--<link rel="stylesheet" href="./css/07_footer.css">
+	<!--<link rel="stylesheet" href="./css/07_footer.css">-->
 	<link rel="stylesheet" href="./css/08_pictureGrid.css">
-	<link rel="stylesheet" href="./css/98_fadeEffect.css">
+	<!--<link rel="stylesheet" href="./css/98_fadeEffect.css">
 	<link rel="stylesheet" href="./css/99_mediaqueries.css">-->
   	<title>martinDev</title>
 </head>
@@ -42,12 +42,27 @@
 
 		<main class="main">
 			
-			<div class="article article--white" id="welcome">
-				<div class="article__title">Hello there!</div>
+			<div class="article article--light" id="welcome">
+				<h2>Welcome!</h2>
 				<div class="article__content">
 					<p>
 						My name is <strong>Martin</strong>, and I'm a <strong>Software Developer</strong>. Below you'll see some of the stuff I've used most recently.
 					</p>
+				</div>
+				<div class="article--space"></div>
+				<div class="img_gridColumns4">
+					<div class="pictureInRow"><a href="https://www.swift.org/"><img src="./img/icons/swift-original.svg" alt="Swift"></a></div>
+					<div class="pictureInRow"><a href="https://www.java.com/es/"><img src="./img/icons/java-original.svg" alt="Java"></a></div>
+					<div class="pictureInRow"><a href="https://developer.android.com/kotlin"><img src="./img/icons/kotlin-original.svg" alt="Kotlin"></a></div>
+					<div class="pictureInRow"><a href="https://flutter.dev/"><img src="./img/icons/flutter-original.svg" alt="Dart+Flutter"></a></div>
+					<div class="pictureInRow"><a href="http://www.w3.org/TR/html5/"><img src="./img/icons/html5-original.svg" alt="HTML5"></a></div>
+					<div class="pictureInRow"><a href="https://www.w3.org/Style/CSS/"><img src="./img/icons/css3-original.svg" alt="CSS3"></a></div>
+					<div class="pictureInRow"><a href="https://developer.mozilla.org/es/docs/Web/JavaScript"><img src="./img/icons/javascript-original.svg" alt="JavaScript"></a></div>
+					<div class="pictureInRow"><a href="https://www.mysql.com/"><img src="./img/icons/mysql-original.svg" alt="MySQL"></a></div>
+					<div class="pictureInRow"><a href="https://www.jetbrains.com/es-es/idea/"><img src="./img/icons/intellij-original.svg" alt="IntellijIDEA"></a></div>
+					<div class="pictureInRow"><a href="https://developer.android.com/studio"><img src="./img/icons/androidstudio-original.svg" alt="Android Studio"></a></div>
+					<div class="pictureInRow"><a href="https://developer.apple.com/xcode/"><img src="./img/icons/xcode-original.svg" alt="Xcode"></a></div>
+					<div class="pictureInRow"><a href="https://code.visualstudio.com/"><img src="./img/icons/vscode-original.svg" alt="VS Code"></a></div>
 				</div>
 				<!--<div class="article__title"><strong>Mobile and Desktop Development</strong></div>
 				<div class="article__pic_wrapper">
@@ -103,8 +118,8 @@
 				</div>-->
 			</div>
 
-			<div class="article article--black" id="aboutMe">
-				<div class="article__title">A little bit about myself</div>
+			<div class="article article--dark" id="aboutMe">
+				<h2>A little bit about myself</h2>
 				<div class="article__content">
 					<p>
 						Since I was very young, I've always been passionate about technology and science.
@@ -117,16 +132,13 @@
 						programming language was <strong>Swift</strong> which I learned following Apple's official documentation and
 						using some resources such as Playgrounds and some ebooks. Then I've learned some of <strong>OOP with
 						C++</strong> using Visual Studio as the main IDE.
-
-						By 2022 my I've got a very profound understanding of many different systems, knowing 
-						plenty of processes
 					</p>
 
 				</div>
 			</div>
 
-			<div class="article article--grey" id="myProjects">
-				<div class="article__title">Some of my projects</div>
+			<div class="article article--light" id="myProjects">
+				<h2>Some of my projects</h2>
 				<div class="article__content">
 					<ul>
 						<li class="article__box"><p>Project #1</p></li>
@@ -137,11 +149,11 @@
 				</div>
 			</div>
 
-			<div class="article article--white" id="contactMe">
+			<div class="article article--medium" id="contactMe">
 				<div class="article__content">
 					<form action="./backend/Action.java" method="post">
 						<fieldset>
-							<legend><h2>Contact me</h2></legend>
+							<legend style="text-align:center"><h3>Contact me</h3></legend>
 							<div class="input"><p><label for="contactName">Name: </label><input type="text" name="contactName" id="contactName"></p></div>
 							<div class="input"><p><label for="contactMail">Email: </label><input type="email" name="contactMail" id="contactMail"></p></div>
 							<div class="input"><p><input type="text" name="messageBox" id="messageBox" class=""></p></div>
@@ -176,6 +188,7 @@
 			<div class="footer__signature">
 				<div>Martin Cordoba</div>
 				<div>iOS & Android Developer</div>
+				<!-- devicon.dev usplash etc...-->
 			</div>
 
 		</footer>

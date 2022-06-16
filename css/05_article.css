@@ -1,57 +1,33 @@
 .article
 {
-	line-height: 2em;
-	padding-top:5em;
-	padding-bottom:5em;
-	padding-left: 15%;
-	padding-right: 15%;
-	text-align: justify;
-	font-size: larger;
 	display:flex;
 	flex-direction: column;
+    border-bottom: 0.5px solid grey;
+    padding:5% 15% 5% 15%;
 }
 
-.article--white
+.article--light
 {
 	background-color: white;
 }
 
-.article--black
+.article--dark
 {
-	background-color: black;
+	background-color: #082032;
 	color:white;
 }
 
-.article--grey
+.article--medium
 {
-	background-color: lightgrey;
+	background-color: #334756;
 }
 
-.article__title
+.article h2
 {
-	padding-top:1em;
-	padding-bottom:1em;
-	width: 100%;
-	font-size: larger;
-	display:flex;
+    padding: 0 0 1em 0;
 }
 
-.article__title strong
+.article--space
 {
-	width:100%;
-	text-align: center;
+	padding-bottom: 2em;
 }
-
-.article__pic_wrapper
-{
-	display:grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: 1fr;
-	gap: 5px;
-}
-.article__content form > fieldset
-{
-	display: block;
-	
-}
-

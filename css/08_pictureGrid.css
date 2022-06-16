@@ -1,5 +1,31 @@
-.picRowContainer
+.img_gridColumns4
 {
     display:grid;
-    grid-template-columns: 4;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+
+.pictureInRow
+{
+	display:grid;
+	grid-template-columns: 100px;
+	justify-content: center;
+}
+
+.pictureInRow img:hover
+{
+	filter: drop-shadow(0 0 5px #FF6768);
+}
+/*
+.article__pic_wrapper
+{
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	gap: 5px;
+}
+.article__content form > fieldset
+{
+	display: block;
+	
+}
+*/
