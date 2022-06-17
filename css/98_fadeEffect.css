@@ -2,13 +2,13 @@
 .fadetextpic_container
 {
 	position: relative;
-	width: 120px;
+	/*width: auto;*/
 	transition: .5s ease;
 }
 
 .fadeimage
 {
-	width: 100%;
+	/*width: 100%;*/
 	display: block;
 	height: auto;
 	border-radius: 5px;
@@ -21,11 +21,11 @@
 	bottom: 0;
 	left: 0;
 	right: 0;
-	height: 100%;
-	width: 100%;
+	height: auto;
+	/*width: 100%;*/
 	opacity: 0;
 	transition: .5s ease;
-	background-color: orange;
+	background-color: #FF6768;
 	border-radius: 5px;
 }
 
@@ -36,8 +36,6 @@
 .fadeoverlay:hover
 {
 	opacity:0.75;
-	font-weight: bolder;
-	font-size: larger;
 }
 
 .fadetext

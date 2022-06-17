@@ -7,8 +7,35 @@
 .pictureInRow
 {
 	display:grid;
-	grid-template-columns: 100px;
 	justify-content: center;
+}
+
+.pictureInRow--small
+{
+	padding: 25px 0 25px 0;
+	object-fit: cover;
+	width:100px;
+}
+
+.pictureInRow--medium
+{
+
+	object-fit: cover;
+	height: 300px;
+	max-width: 100%;
+	max-height: 25vw;
+	min-height: 150px;
+	width: 220px;
+	display:flex;
+	justify-content: center;
+	box-shadow: 5px 5px 15px lightslategray;
+}
+
+.pictureInRow--big
+{
+	padding: 15px 0 15px 0;
+	object-fit: cover;
+	width: 500px;
 }
 
 .pictureInRow img:hover
