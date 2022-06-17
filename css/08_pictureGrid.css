@@ -8,18 +8,18 @@
 {
 	display:grid;
 	justify-content: center;
+	padding: 5% 0 5% 0;
 }
 
 .pictureInRow--small
 {
-	padding: 25px 0 25px 0;
+	/*padding: 25px 0 25px 0;*/
 	object-fit: cover;
 	width:100px;
 }
 
 .pictureInRow--medium
 {
-
 	object-fit: cover;
 	height: 300px;
 	max-width: 100%;

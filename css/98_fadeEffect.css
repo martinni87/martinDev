@@ -35,18 +35,24 @@
 }
 .fadeoverlay:hover
 {
-	opacity:0.75;
+	opacity:0.85;
 }
 
 .fadetext
 {
-	color: black;
-	position: absolute;
+	color: white;
+	/*position: absolute;
 	top: 50%;
 	left: 50%;
 	-webkit-transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);*/
+	text-align: center;
+	padding: 5%;
+	line-height: normal;
+}
+.fadetext h3
+{
 	text-align: center;
 }
 
