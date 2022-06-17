@@ -1,0 +1,28 @@
+.wrapper_btn
+{
+    display:flex;
+    justify-content: center;
+    width: 100%;
+}
+.default__btn
+{
+    line-height: normal;
+    border: 0.5px solid grey;
+    background-color: #FF6768;
+    margin-top: 5%;
+    padding:10px;
+    transition: ease 0.5s;
+    box-shadow: 2px 2px 5px grey;
+    border-radius: 5px;
+}
+
+.default__btn a
+{
+    color:white !important;
+}
+
+.default__btn:hover
+{
+    transform: scale(1.025);
+    box-shadow: 0 0 5px #FF6768;
+}

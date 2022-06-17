@@ -43,17 +43,18 @@
 	display:flex;
 	justify-content: center;
 	align-items: center;
-	border: 0.5px solid grey;
+	/*border: 0.5px solid grey;
 	border-radius:10px;
 	width: 5%;
 	min-width: fit-content;
 	height: 50px;
-	margin:15px;
+	margin:15px;*/
 	padding: 0 15px 0 15px;
 }
 
 .footer__links a:hover
 {
-	box-shadow: 0 0 15px white;
+	filter:drop-shadow(0 0 15px white);
+	/*box-shadow: 0 0 15px white;*/
 	transition: .5s ease;
 }
