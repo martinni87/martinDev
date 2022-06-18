@@ -204,18 +204,71 @@
 
 			<div class="article article--medium" id="contactMe">
 				<div class="article__content">
-					<form action="./backend/Action.java" method="post">
-						<fieldset>
-							<legend style="text-align:center"><h3>Contact me</h3></legend>
-							<div class="input"><p><label for="contactName">Name: </label><input type="text" name="contactName" id="contactName"></p></div>
-							<div class="input"><p><label for="contactMail">Email: </label><input type="email" name="contactMail" id="contactMail"></p></div>
-							<div class="input"><p><input type="text" name="messageBox" id="messageBox" class=""></p></div>
-							<p>
-								<input type="submit" value="Send" name="send">
-								<input type="reset" value="Clear" name="clear">
-							</p>
-						</fieldset>
-					</form>
+					<div class="article__form">
+						<label for="nickname" aria-hidden="true" class="honeypot"> Nickname
+							<input type="text" 
+								   name="nickname" 
+								   id="nickname" 
+								   class="user-cannot-see" 
+								   autocomplete="off" 
+								   tabindex="-1">
+						</label>
+
+						<form action="./script/form.php" method="post" class="article__form">
+							<h3 class="form__title">Contact me</h3>
+							<div>
+								<input class="input_text" type="text" value="" name="contact_name" id="name" placeholder="Contact name">
+							</div>
+							<div>
+								<input class="input_text" type="email" name="email" id="contact_email" value="" placeholder="Email address">
+							</div>
+							<div>
+								<input class="input_text" type="subject" name="subject" id="subject" value="" placeholder="Subject">
+							</div>
+							<div>
+								<textarea class="input_textarea" id="message" name="message" placeholder="Write your message here..."></textarea>
+							</div>
+							<div class="wrapper_btn">
+								<button class="default__btn" type="submit">Send</button>
+								<button class="default__btn" type="reset">Clear</button>
+							</div>		
+						</form>
+					</div>
+
+
+
+
+					<!-- Not so old form (from outside)
+					<div class="article__form">
+						<iframe src="./Contact_me.html" frameborder="0" style="width:100%;min-height:100%;"></iframe>
+					</div>
+					-->
+
+
+					<!-- Antiguo formulario 
+					<div class="article__form">
+						<form action="./backend/Action.php" method="post">
+							<div form_input>
+								<input type="text" id="name" name="user_name" class="input_text" placeholder="Contact name">
+							</div>
+							<div>
+								<input type="email" id="mail" name="user_mail" class="input_text" placeholder="Contact email">
+							</div>
+							<div>
+								<textarea id="msg" name="user_message" class="input_textarea" placeholder="Write here your message..."></textarea>
+							</div>
+							<div class="wrapper_btn">
+								<input type="submit" value="Send" name="submit_btn" class="default__btn">
+								<input type="reset" value="Clear" name="clear_btn" class="default__btn">
+							</div>
+						</form>
+					</div>
+					<div class="article__form">
+						<script type="text/javascript" src="https://form.jotform.com/jsform/221682061017043"></script>
+					</div>
+					-->
+
+
 				</div>
 			</div>
 		</main>
@@ -246,6 +299,7 @@
 				<a href="https://www.unsplash.com">Unsplash</a>
 				<a href="https://www.devicon.dev">Devicon</a>
 				<a href="https://fonts.google.com">Google fonts</a>
+				<a href="https://www.colorhunt.co">Color hunt</a>
 			</div>
 
 			<div class="footer__signature">

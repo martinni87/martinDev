@@ -1,10 +1,33 @@
-fieldset
-{
-	padding:25px;
+.honeypot {
+    display:none
 }
 
-.input
+.article__form
+{
+	display:flex;
+	flex-direction: column;
+	border: 0.5px solid #082032;
+	color: white;
+	padding: 25px;
+	font-size: small;
+	font-family: 'Courier New', Courier, monospace;
+	background-color: #2C394B;
+	height:auto;
+}
+
+.input_text
+{
+	width:100%;
+	border: 0 0 0.5px 0 solid white;
+}
+
+.input_textarea
 {
 	width: 100%;
-	border: 0 0 1 0;
+	height: 10vw;
+}
+
+.form__title
+{
+	text-align: center;
 }
