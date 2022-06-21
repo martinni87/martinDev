@@ -1,2 +1,10 @@
-colors.txt
+# Type of files not synced
+
+## Windows files
+Thumbs.db
+ehthumbs.db
+
+# macOS conf files
+*/.DS_Store
 .DS_Store
+.DS_Store?
