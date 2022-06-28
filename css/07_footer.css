@@ -15,9 +15,17 @@
 	padding: 10px 15% 0 15%;
 }
 
+.footer__disclaimer
+{
+	font-weight:lighter;
+	line-height: 1em;
+	color: grey;
+	padding-bottom: 1em;
+}
+
 .footer__signature
 {
-	padding: 0 15% 20px 15%;
+	padding: 20px 15% 20px 15%;
 	line-height: 2em;
 	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 	border-top: 0.5px solid grey;
@@ -43,18 +51,11 @@
 	display:flex;
 	justify-content: center;
 	align-items: center;
-	/*border: 0.5px solid grey;
-	border-radius:10px;
-	width: 5%;
-	min-width: fit-content;
-	height: 50px;
-	margin:15px;*/
 	padding: 0 15px 0 15px;
 }
 
 .footer__links a:hover
 {
 	filter:drop-shadow(0 0 15px white);
-	/*box-shadow: 0 0 15px white;*/
 	transition: .5s ease;
 }
