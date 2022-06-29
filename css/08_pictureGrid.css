@@ -13,7 +13,6 @@
 
 .pictureInRow--small
 {
-	/*padding: 25px 0 25px 0;*/
 	object-fit: cover;
 	width:100px;
 }
@@ -42,17 +41,3 @@
 {
 	filter: drop-shadow(0 0 5px #FF6768);
 }
-/*
-.article__pic_wrapper
-{
-	display:grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: 1fr;
-	gap: 5px;
-}
-.article__content form > fieldset
-{
-	display: block;
-	
-}
-*/
