@@ -13,31 +13,15 @@
 
 @media only screen and (max-width: 660px)
 {
-	.navBar-text
+	.navBar .navBar__btn
 	{
 		display:none
 	}
-	.navBar-icon
+	.navBar__icon
 	{
 		display:flex;
-		border-top:0.5px solid darkgrey;
-		border-bottom:1px solid darkgrey;
-		text-align: center;
-		position:sticky;
-		top:0;
-		z-index:100;
-		background-color: white;
-		min-height: auto;
-		height: 50px;
 		width:100%;
-	}
-	.navBar-icon img
-	{
-		display: flex;
-		width: 100%;
-		margin-left: 88%;
-		margin-right:4%;
-		justify-self: flex-end;
+		justify-content: center;
 	}
 	.img_gridColumns4
 	{
@@ -47,5 +31,32 @@
 	.img_gridColumns4--icons
 	{
 		grid-template-columns: 1fr 1fr;
+	}
+}
+
+  /* 
+  The "responsive" class is added to the navBar with JavaScript when the user clicks on the icon.
+  This class makes the topnav look good on small screens (display the links vertically instead of horizontally)
+  */
+@media screen and (max-width: 660px) {
+	.navBar.responsive
+	{
+		display:flex;
+		flex-direction: column;
+	}
+	.navBar.responsive a.navBar__icon
+	{
+		display:flex;
+/* 		
+		position:absolute;
+		right: 0;
+		top: 1em;
+		transition:1s; */
+	}
+
+	.navBar.responsive a
+	{
+		display: block;
+		position:relative;
 	}
 }

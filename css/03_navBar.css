@@ -3,7 +3,7 @@ a:link, a:visited, a:active {
 	color:grey;
 }
 
-.navBar-text
+nav
 {
 	/*border-top:0.5px solid darkgrey;*/
 	border-bottom:1px solid darkgrey;
@@ -15,7 +15,7 @@ a:link, a:visited, a:active {
 	height: auto;
 }
 
-.navBar-text ul
+.navBar
 {
 	padding:1em 15% 1em 15%;
 	display:flex;
@@ -23,10 +23,11 @@ a:link, a:visited, a:active {
 	gap:10px;
 	justify-content: space-between;
 	list-style: none;
+	
 }
 
 
-.navBar__btn a:hover
+.navBar a:hover
 {
 	color:#FF6768;
 	font-weight: bolder;
@@ -34,7 +35,7 @@ a:link, a:visited, a:active {
 	transition: 0.5s ease;
 }
 
-.navBar-icon img
+.navBar__icon
 {
 	display:none;
 }

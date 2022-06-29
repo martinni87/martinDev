@@ -8,6 +8,7 @@
   	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./css/styles.css">
+	<script src="./javascript/menuResponsive.js"></script>
   	<title>martinDev</title>
 </head>
 <body>
@@ -19,18 +20,22 @@
 			</div>
 		</header>
 
-		<nav class="navBar-text">
-			<ul>
-				<li class="navBar__btn" id="navBar__btn"><a href="#welcome">WELCOME</a></li>
-				<li class="navBar__btn" id="navBar__btn"><a href="#aboutMe">ABOUT ME</a></li>
-				<li class="navBar__btn" id="navBar__btn"><a href="#myProjects">PROJECTS</a></li>
-				<li class="navBar__btn" id="navBar__btn"><a href="#contactMe">CONTACT ME</a></li>
-			</ul>
+		<nav>
+			<div class="navBar" id="navBar">
+				<a class="navBar__btn" onclick="toggleMenuResponsive()" href="#welcome">WELCOME</a>
+				<a class="navBar__btn" onclick="toggleMenuResponsive()" href="#aboutMe">ABOUT ME</a>
+				<a class="navBar__btn" onclick="toggleMenuResponsive()" href="#myProjects">PROJECTS</a>
+				<a class="navBar__btn" onclick="toggleMenuResponsive()" href="#contactMe">CONTACT ME</a>
+				<a href="javascript:void(0);" class="navBar__icon" onclick="toggleMenuResponsive()">
+					<i class="fa fa-bars"></i>
+				</a>
+			</div>
 		</nav>
+		<!--
 		<nav class="navBar-icon">
 			<img src="./img/cabecera/menu.png" alt="Menu button">
 		</nav>
-
+		-->
 		<main class="main">
 			
 			<div class="article article--light" id="welcome">

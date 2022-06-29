@@ -9,3 +9,6 @@
 @import url(./08_pictureGrid.css);
 @import url(./09_buttons.css);
 @import url(./99_mediaqueries.css);
+
+/* Imoprts navbar burger icon */
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
