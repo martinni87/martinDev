@@ -41,3 +41,14 @@
 {
 	filter: drop-shadow(0 0 5px #FF6768);
 }
+
+.singlepic
+{
+	text-align: center;
+	min-width: 300px;
+	width: 60%;
+	max-width: fit-content;
+	box-shadow: 5px 5px 15px grey;
+	border-radius: 5px;
+	filter: grayscale();
+}
