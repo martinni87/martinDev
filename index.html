@@ -22,13 +22,13 @@
 
 		<nav>
 			<div class="navBar" id="navBar">
+				<a href="javascript:void(0);" class="navBar__icon" onclick="toggleMenuResponsive()">
+					<i class="fa fa-bars"></i>
+				</a>
 				<a class="navBar__btn" onclick="toggleMenuResponsive()" href="#welcome">WELCOME</a>
 				<a class="navBar__btn" onclick="toggleMenuResponsive()" href="#aboutMe">ABOUT ME</a>
 				<a class="navBar__btn" onclick="toggleMenuResponsive()" href="#myProjects">PROJECTS</a>
 				<a class="navBar__btn" onclick="toggleMenuResponsive()" href="#contactMe">CONTACT ME</a>
-				<a href="javascript:void(0);" class="navBar__icon" onclick="toggleMenuResponsive()">
-					<i class="fa fa-bars"></i>
-				</a>
 			</div>
 		</nav>
 		<!--
@@ -37,8 +37,8 @@
 		</nav>
 		-->
 		<main class="main">
-			
-			<div class="article article--light" id="welcome">
+			<div class="article--space" id="welcome"></div>
+			<div class="article article--light">
 				<h2>Welcome!</h2>
 				<div class="article__content">
 					<p>
@@ -61,8 +61,8 @@
 					<div class="pictureInRow"><a href="https://code.visualstudio.com/"><img class="pictureInRow--small" src="./img/icons/vscode-original.svg" alt="VS Code"></a></div>
 				</div>
 			</div>
-
-			<div class="article article--dark" id="aboutMe">
+			<div class="article--space" id="aboutMe"></div>
+			<div class="article article--dark">
 				<h2>A little bit about myself</h2>
 				<div class="article__content">
 					<p>
@@ -91,7 +91,7 @@
 			</div>
 
 			<div class="article article--light" id="myProjects">
-				
+				<div class="article--space"></div>
 				<h2>Projects</h2>
 				<div class="under_construction">
 					<img src="./img/projects/underconstruction.jpg" alt="Under Construction" class="singlepic">
@@ -207,8 +207,8 @@
 				</div>
 				
 			</div>
-
-			<div class="article article--medium" id="contactMe">
+			<div class="article--space" id="contactMe"></div>
+			<div class="article article--medium">
 				<div class="article__content">
 					<form form name="form" action="https://formsubmit.co/139943896f32e620e7963d235970f371" method="POST" class="form">
 						<h3 class="form__title">CONTACT FORM</h3>

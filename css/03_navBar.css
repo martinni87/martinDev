@@ -13,6 +13,7 @@ nav
 	z-index:100;
 	background-color: white;
 	height: auto;
+	box-shadow: 1px 0 10px black;
 }
 
 .navBar
@@ -23,7 +24,6 @@ nav
 	gap:10px;
 	justify-content: space-between;
 	list-style: none;
-	
 }
 
 
